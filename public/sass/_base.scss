@@ -3,3 +3,13 @@
   Base or default styles
 
 */
+
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700,300,500,800);
+
+$base_color: #183152;
+$base_font: 'Exo 2', 'sans-serif';
+
+
+body {
+  font-family: $base_font;
+}

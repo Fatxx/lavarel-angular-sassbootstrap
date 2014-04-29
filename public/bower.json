@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "bootstrap-sass-official": "latest",
+    "bootstrap": "latest",
     "angular": "latest",
     "angular-route": "latest",
     "angular-resource": "latest",
@@ -17,6 +18,8 @@
     "lodash": "latest",
     "fontawesome": "latest",
     "angular-ui-bootstrap": "latest",
-    "angular-ui-router": "latest"
+    "angular-ui-router": "latest",
+    "ionicons": "latest",
+    "jquery": "latest"
   }
 }

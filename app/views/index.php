@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <title>SACOSTEJO</title>
 
-<!-- CSS -->
+  <title>SACOSTEJO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>

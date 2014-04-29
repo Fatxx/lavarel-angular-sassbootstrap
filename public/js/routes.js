@@ -1,10 +1,10 @@
 define(['./app'], function (app) {
     'use strict';
-    
+
     return app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
         $stateProvider
           .state('home', {
-            url: "/",
+            url: "/home",
             views: {
                 "header": {
                   templateUrl: 'templates/navbar.html',
@@ -35,6 +35,18 @@ define(['./app'], function (app) {
                 "body": {
                   templateUrl: 'views/dashboard.html',
                   controller: 'dashboardController'
+                }
+            }
+          })
+          .state('empresa', {
+            url: "/empresa",
+            views: {
+                "header": {
+                  templateUrl: 'templates/navbar.html',
+                  controller: 'navbarController'
+                },
+                "body": {
+                  template: "<div> TESTE </div>"
                 }
             }
           });

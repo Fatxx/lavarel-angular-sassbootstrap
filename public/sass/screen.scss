@@ -5,10 +5,12 @@
 ---------------------------------------------*/
 
 // Libs
+@import "bourbon/bourbon";
 @import "../lib/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+$ionicons-font-path: "../lib/ionicons/fonts";
+@import "../lib/ionicons/scss/ionicons";
 $fa-font-path: "../lib/fontawesome/fonts";
 @import "../lib/fontawesome/scss/font-awesome";
-@import "bourbon/bourbon";
 
 // Styles
 @import "base";

@@ -8,7 +8,8 @@ require.config({
         'angular-sanitize': '../lib/angular-sanitize/angular-sanitize',
         'angular-ui-router': '../lib/angular-ui-router/release/angular-ui-router',
         'lodash': '../lib/lodash/dist/lodash',
-        'bootstrap-js': '../lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap'
+        'jquery': '../lib/jquery/dist/jquery',
+        'bootstrap-js': '../lib/bootstrap/dist/js/bootstrap'
     },
 
     shim: {
@@ -26,6 +27,9 @@ require.config({
         },
         'angular-ui-router': {
           deps: ['angular']
+        },
+        'bootstrap-js': {
+          deps: ['jquery']
         }
     },
 

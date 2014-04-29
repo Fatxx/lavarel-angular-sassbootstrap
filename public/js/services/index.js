@@ -1,0 +1,4 @@
+define([
+    './authService',
+    './photoService'
+], function () {});

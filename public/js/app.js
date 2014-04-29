@@ -5,8 +5,9 @@ define([
     'angular-resource',
     'lodash',
     'bootstrap-js',
+    'angular-ui-router',
     './controllers/index',
-    // './directives/index',
+    './directives/index',
     // './filters/index',
     './services/index'
   ], function (angular) {
@@ -14,9 +15,10 @@ define([
 
         return angular.module('app', [
             'app.controllers',
-            // 'app.directives',
+            'app.directives',
             // 'app.filters',
             'app.services',
+            'ui.router',
             'ngRoute',
             'ngSanitize',
             'ngResource'

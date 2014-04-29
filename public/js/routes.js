@@ -1,24 +1,48 @@
 define(['./app'], function (app) {
     'use strict';
-    return app.config(function ($routeProvider) {
-        $routeProvider
-          .when('/', {
-              templateUrl: 'views/home.html',
-              controller: 'homeController'
+    
+    return app.config(function ($locationProvider, $stateProvider, $urlRouterProvider) {
+        $stateProvider
+          .state('home', {
+            url: "/",
+            views: {
+                "header": {
+                  templateUrl: 'templates/navbar.html',
+                  controller: 'navbarController'
+                },
+                "body": {
+                  templateUrl: 'views/home.html',
+                  controller: 'homeController'
+                }
+            }
           })
-
-          .when('/admin', {
-              templateUrl: 'views/login.html',
-              controller: 'loginController'
+          .state('admin', {
+            url: "/admin",
+            views: {
+                "header": {
+                },
+                "body": {
+                  templateUrl: 'views/login.html',
+                  controller: 'loginController'
+                }
+            }
           })
-
-          .when('/dashboard', {
-              templateUrl: 'views/dashboard.html',
-              controller: 'dashboardController'
-          })
-          .otherwise({
-              redirectTo: '/'
+          .state('dashboard', {
+            url: "/dashboard",
+            views: {
+                "header": {
+                },
+                "body": {
+                  templateUrl: 'views/dashboard.html',
+                  controller: 'dashboardController'
+                }
+            }
           });
+
+          $urlRouterProvider.otherwise('/');
+
+          $locationProvider.html5Mode(true);
+
       }).config(function($httpProvider){
 
           var interceptor = function($rootScope, $location, $q, Flash){
@@ -30,7 +54,7 @@ define(['./app'], function (app) {
           var error = function(response){
               if (response.status == 401){
                   delete sessionStorage.authenticated;
-                  $location.path('/');
+                  $location.path('/admin');
                   Flash.show(response.data.flash);
 
               }

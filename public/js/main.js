@@ -6,6 +6,7 @@ require.config({
         'angular-route': '../lib/angular-route/angular-route',
         'angular-resource': '../lib/angular-resource/angular-resource',
         'angular-sanitize': '../lib/angular-sanitize/angular-sanitize',
+        'angular-ui-router': '../lib/angular-ui-router/release/angular-ui-router',
         'lodash': '../lib/lodash/dist/lodash',
         'bootstrap-js': '../lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap'
     },
@@ -21,6 +22,9 @@ require.config({
           deps: ['angular']
         },
         'angular-sanitize': {
+          deps: ['angular']
+        },
+        'angular-ui-router': {
           deps: ['angular']
         }
     },

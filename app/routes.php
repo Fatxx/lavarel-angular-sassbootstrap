@@ -19,7 +19,6 @@ Route::get('/', function()
 
 });
 
-
 // Route Group API
 Route::group(array('prefix' => 'api'), function()
 {
@@ -32,4 +31,9 @@ Route::group(array('prefix' => 'service'), function()
 {
     Route::resource('authenticate', 'AuthenticationController',
                   array('only' =>  array('index', 'store')));
+});
+
+App::missing(function($exception)
+{
+	return View::make('index');
 });

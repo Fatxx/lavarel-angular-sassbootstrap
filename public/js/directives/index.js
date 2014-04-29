@@ -1,2 +1,3 @@
 define([
+    "./navbarDir"
  ], function () {});

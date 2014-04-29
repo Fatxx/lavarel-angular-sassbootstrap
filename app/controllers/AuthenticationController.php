@@ -49,7 +49,7 @@ class AuthenticationController extends \BaseController {
 				else
 				{
             return Response::json([
-                    'flash' => 'A autenticação falhou.'],
+                    'flash' => 'Os dados de login não estão válidos! Por favor introduza os dados correctos.'],
                 401
             );
         }

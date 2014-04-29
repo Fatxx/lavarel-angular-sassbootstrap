@@ -1,6 +1,5 @@
-
 <blockquote>
-  <h2> BACK-END TO FRONT-END application with MySQL, Lavarel, Angular.JS, Sass-Bootstrap 3 </h2>
+  <h4> BACK-END TO FRONT-END application with MySQL, Lavarel, Angular.JS, Sass-Bootstrap 3 </h4>
 </blockquote>
 
   <h3> LAVAREL </h3>
